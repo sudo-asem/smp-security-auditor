@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "smpaudit",
+  "version": "${version}",
+  "name": "SMP Security Auditor",
+  "description": "Passive client-side audit of the command tree sent by a Minecraft server to the current player.",
+  "authors": ["OpenAI"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.smpaudit.SmpAuditClient"]
+  },
+  "mixins": ["smpaudit.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "26.1.2",
+    "java": ">=25"
+  }
+}
